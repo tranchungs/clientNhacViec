@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon>Nextcloud_Logo.svg.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ical.Net" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="antlr.runtime">
+      <HintPath>C:\Users\Chung\Downloads\DDay-iCal-1_0_2-BetaCandidate2-bin\antlr.runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DDay.Collections">
+      <HintPath>C:\Users\Chung\Downloads\DDay-iCal-1_0_2-BetaCandidate2-bin\DDay.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="DDay.iCal">
+      <HintPath>C:\Users\Chung\Downloads\DDay-iCal-1_0_2-BetaCandidate2-bin\DDay.iCal.dll</HintPath>
+    </Reference>
+    <Reference Include="xNet">
+      <HintPath>..\..\..\C#\Lazada\Lazada\bin\Debug\xNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
